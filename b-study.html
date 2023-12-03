@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bible Study App</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="denismytin@gmail.com">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="Bible, Mathew, John, books">
+        <meta name="description" content="The Bible.">
+        <meta http-equiv="X-UA-Compatible" content="IE-7">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta property="og:title" content="The Bible.">
+        <meta property="og:description" content="The Bible contains the mind of God and the state of man.">
+        <meta property="og:image" content="https://www.myimage.com">
+        <meta property="og:image-width" content="650">
+        <meta property="og:image-height" content="350">
+        <meta property="og:url" content="https://www.myurl.com">
+        <base href="https://www.mainurl.com/">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="icon" src="./images/bible.png" sizes="32x32" type="img/svg+xml">
+        <link rel="stylesheet" href="b-study.css">
+        <!--
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/min.css">
+        
+        -->
+        
+    </head>
+    <body>
+        <nav class="nav_wrapper">
+            <a href="" id="logo"><!--<img src="" id="logo_img" alt="Bible App">-->BSC</a>
+            <div class="study_together">
+                <button id="st_tog">Enroll</button>
+            </div>
+        </nav>
+        <main class="container_box">
+            <h3 class="main_text">New Testament Books</h3>
+            <p class="b-text"><blockquote>&rdquo;The<span class="bible"><a href="#" style="text-decoration: none; color: goldenrod;"> Bible</a></span> contains the mind of God, the state of man, the way of salvation, 
+                the doom of sinners, and the happiness of believers. 
+                Its doctrines are holy, its precepts are binding, its histories are true, and its decisions are immutable. Read it to be wise, believe it to be safe, and practice it to be holy. It contains light to direct you, food to support you, and comfort to cheer you.&ldquo;</blockquote>
+            </p>
+            <p class="b-text"><blockquote>&rdquo;It is the traveller's map, the pilgrim's staff, the pilot's compass, the soldiers sword, and the christian's charter. 
+                Here paradise is restored, Heaven opened, and the gates of hell disclosed.&ldquo;</blockquote></p>
+
+                <form action="" id="searchForm">
+                    <fieldset id="s_book">
+                        <label for="">Book</label><br>
+                        <select name="search-book" id="">
+                            <option value="matt">Matthew</option>
+                            <option value="mark">Mark</option>
+                            <option value="luke">Luke</option>
+                            <option value="john">John</option>
+                            <option value="acts">Acts</option>
+                            <option value="rom">Romans</option>
+                            <option value="1-cor">1 Corinthians</option>
+                            <option value="2-cor">2 Corinthians</option>
+                            <option value="gal">Galatians</option>
+                            <option value="eph">Ephesians</option>
+                            <option value="phil">Phillipians</option>
+                            <option value="col">Collossians</option>
+                            <option value="1-thes">1 Thessalonians</option>
+                            <option value="2-thes">2 Thessalonians</option>
+                            <option value="1-tim">1 Timothy</option>
+                            <option value="2-tim">2 Timothy</option>
+                            <option value="titus">Titus</option>
+                            <option value="phil">Philemon</option>
+                            <option value="heb">Hebrews</option>
+                            <option value="james">James</option>
+                            <option value="1-peter">1 Peter</option>
+                            <option value="2-peter">2 Peter</option>
+                            <option value="1-john">1 John</option>
+                            <option value="2-john">2 John</option>
+                            <option value="3-john">3 John</option>
+                            <option value="jude">Jude</option>
+                            <option value="rev">Revelation</option>
+                        </select>
+                     </fieldset>
+                    <fieldset class="s_chap">
+                        <label for="">Chapter</label><br>
+                        <select name="" class="b-chap" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                            <option value="2">5</option>
+                            <option value="2">6</option>
+                            <option value="2">7</option>
+                            <option value="2">8</option>
+                            <option value="2">9</option>
+                            <option value="2">10</option>
+                            <option value="2">11</option>
+                            <option value="2">12</option>
+                            <option value="2">13</option>
+                            <option value="2">14</option>
+                            <option value="2">15</option>
+                            <option value="2">16</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="s_verse">
+                        <label for="">Verse</label><br>
+                        <select name="" class="b-verse" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                            <option value="2">5</option>
+                            <option value="2">6</option>
+                            <option value="2">7</option>
+                            <option value="2">8</option>
+                            <option value="2">9</option>
+                            <option value="2">10</option>
+                            <option value="2">11</option>
+                            <option value="2">12</option>
+                            <option value="2">13</option>
+                            <option value="2">14</option>
+                            <option value="2">15</option>
+                            <option value="2">16</option>
+                        </select>
+                    </fieldset>
+                    <input type="button" onclick="searchBook()" value="Search" id="s-book">
+
+                </form>
+
+            <div class="container">
+            <div class="side_a box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 1</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="central box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 2</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="side_b box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 3</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="side_b box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 4</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 5</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 6</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 7</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 8</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 9</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 10</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 11</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 12</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 1</p>
+                <p class="b-chap">Chapter 13</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 14</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 15</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 16</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 17</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 18</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 19</p>
+                <a href="" class="read">Read</a>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-bible-funeral-justicon-flat-justicon.png" id="bible_icon"/>
+                <p class="book_title">Matthew</p>
+                <p class="b-chap">Chapter 20</p>
+                <a href="" class="read">Read</a>
+            </div>
+            </div>
+        </main>
+        <footer class="foo card">
+            <a href="" class="blog">Blog</a>
+            <a href="" class="partners">Partners</a>
+            <a href="" class="help">Help</a>
+        </footer>
+    </body>
+</html>
